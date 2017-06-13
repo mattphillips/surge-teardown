@@ -16,13 +16,18 @@
     "lint:fix": "eslint src --fix",
     "precommit": "lint-staged",
     "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "nyc ava --v",
+    "test:coverage": "nyc --reporter=lcov yarn test",
+    "test:watch": "yarn test -- --watch"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.0.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
+    "nyc": "^11.0.2",
     "prettier": "^1.4.4"
   },
   "lint-staged": {
