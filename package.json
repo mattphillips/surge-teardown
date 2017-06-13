@@ -27,11 +27,14 @@
     "eslint": "^4.0.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
+    "node-fetch": "^1.7.1",
     "nyc": "^11.0.2",
-    "prettier": "^1.4.4"
+    "prettier": "^1.4.4",
+    "test-listen": "^1.0.2"
   },
   "dependencies": {
-    "crypto": "^0.0.3"
+    "crypto": "^0.0.3",
+    "micro": "^7.3.3"
   },
   "lint-staged": {
     "*.js": [
