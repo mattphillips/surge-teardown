@@ -10,13 +10,13 @@
     "deployments"
   ],
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "precommit": "lint-staged",
     "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
-    "start": "node src/index.js",
+    "start": "micro",
     "test": "nyc ava --v",
     "test:coverage": "nyc --reporter=lcov yarn test",
     "test:watch": "yarn test -- --watch"
@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "crypto": "^0.0.3",
-    "micro": "^7.3.3"
+    "micro": "^7.3.3",
+    "shelljs": "^0.7.8"
   },
   "lint-staged": {
     "*.js": [
