@@ -30,6 +30,9 @@
     "nyc": "^11.0.2",
     "prettier": "^1.4.4"
   },
+  "dependencies": {
+    "crypto": "^0.0.3"
+  },
   "lint-staged": {
     "*.js": [
       "yarn prettier",
