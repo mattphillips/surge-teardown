@@ -19,11 +19,13 @@
     "start": "micro",
     "test": "nyc ava --v",
     "test:coverage": "nyc --reporter=lcov yarn test",
+    "test:coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test:watch": "yarn test -- --watch"
   },
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-eslint": "^7.2.3",
+    "coveralls": "^2.13.1",
     "eslint": "^4.0.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
