@@ -12,6 +12,12 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0"
   }
 }
