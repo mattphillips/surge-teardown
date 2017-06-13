@@ -1,0 +1,17 @@
+{
+  "name": "surge-teardown",
+  "version": "0.0.1",
+  "author": "Matt Phillips <matt@mattphillips.io> (mattphillips.io)",
+  "description": "A Github webhook to teardown surge.sh deployments",
+  "keywords": [
+    "surge",
+    "github",
+    "teardown",
+    "deployments"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
