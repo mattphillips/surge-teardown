@@ -14,10 +14,21 @@
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
+    "precommit": "lint-staged",
+    "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
     "start": "node src/index.js"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.0.0"
+    "eslint": "^4.0.0",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.1",
+    "prettier": "^1.4.4"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   }
 }
